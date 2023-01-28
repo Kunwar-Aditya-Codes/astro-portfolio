@@ -2,12 +2,15 @@
 import Logo from "/logo.png";
 ---
 
-<header class="p-4 font-bold tracking-wide">
+<header class="p-4 font-light md:text-lg tracking-wide">
   <nav
     class="text-slate-200 flex flex-col space-y-4 md:space-y-0 md:flex-row md:items-center md:justify-between"
   >
-    <a href="/" class="flex items-center justify-center md:flex-[0.2]">
-      <img src={Logo} alt="logo" class="md:w-10 md:h-10 w-8 h-8" />
+    <a
+      href="/"
+      class="flex items-center justify-center md:flex-[0.1] border shadow-lg py-2 rounded-md"
+    >
+      <img src={Logo} alt="logo" class="md:w-12 md:h-12 w-8 h-8" />
     </a>
     <ul class="flex items-center justify-around md:flex-[0.6]">
       <li><a href="#about" class="">About</a></li>
