@@ -1,18 +1,23 @@
 ---
 import Hero from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
+import Stack from "../components/Stack.astro";
 ---
 
 <Layout title="Kunwar Aditya">
   <!-- Intro -->
-  <section class="flex-grow">
+  <section class="h-[42rem]">
     <Hero />
   </section>
 
   <!-- Tech -->
-  <section class="flex-grow"></section>
+  <section class="">
+    <Stack />
+  </section>
 
   <!-- Projects -->
-
+  <!-- <section class="h-screen">
+    <h1>Projects</h1>
+  </section> -->
   <!-- Contact -->
 </Layout>
