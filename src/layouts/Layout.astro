@@ -20,10 +20,12 @@ const { title } = Astro.props;
   <body
     class="bg-gradient-to-b from-indigo-900 via-violet-800 to-violet-400 text-white"
   >
-    <div class="h-screen flex flex-col bg-black/40">
-      <Navbar />
-      <slot />
-      <!-- <Footer /> -->
+    <div class="bg-black/70">
+      <div class="h-screen flex flex-col max-w-7xl mx-auto">
+        <Navbar />
+        <slot />
+        <!-- <Footer /> -->
+      </div>
     </div>
   </body>
 </html>

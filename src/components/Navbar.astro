@@ -8,15 +8,32 @@ import Logo from "/logo.png";
   >
     <a
       href="/"
-      class="flex items-center justify-center md:flex-[0.1] border shadow-lg py-2 rounded-md"
+      class="flex items-center justify-center md:flex-[0.1] py-1 bg-amber-500/70 rounded-lg"
     >
       <img src={Logo} alt="logo" class="md:w-12 md:h-12 w-8 h-8" />
     </a>
-    <ul class="flex items-center justify-around md:flex-[0.6]">
-      <li><a href="#about" class="">About</a></li>
-      <li><a href="#tech">Tech</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+    <ul class="flex items-center justify-around md:flex-[0.6] p-4">
+      <li>
+        <a
+          href="#stack"
+          class="hover:bg-amber-500/70 duration-[250ms] transition ease-in-out px-3 py-2 rounded-md"
+          >Stack</a
+        >
+      </li>
+      <li>
+        <a
+          href="#projects"
+          class="hover:bg-amber-500/70 duration-[250ms] transition ease-in-out px-3 py-2 rounded-md"
+          >Projects</a
+        >
+      </li>
+      <li>
+        <a
+          href="#contact"
+          class="hover:bg-amber-500/70 duration-[250ms] transition ease-in-out px-3 py-2 rounded-md"
+          >Contact</a
+        >
+      </li>
     </ul>
   </nav>
 </header>
