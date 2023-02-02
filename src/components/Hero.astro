@@ -1,20 +1,19 @@
 ---
 import Profile from "/profile.webp";
+import { Icon } from "astro-icon";
 ---
 
 <div class="h-full">
-  <div
-    class="h-full flex flex-col md:flex-row items-center p-4 space-y-6 md:space-y-0"
-  >
+  <div class="h-full flex flex-col md:flex-row items-center p-4 md:space-y-0">
     <!-- About -->
     <div
-      class="flex-[0.5] h-full flex flex-col items-center justify-evenly md:justify-center md:space-y-14 md:items-start w-full p-2"
+      class="flex-[0.5] h-full flex flex-col items-center justify-between md:justify-center md:space-y-14 md:items-start w-full p-2"
     >
       <h1
         class="font-bold text-5xl text-center md:text-left md:text-8xl md:tracking-wide"
       >
         Hi, I'm
-        <span class="text-amber-500"> Kunwar Aditya</span>
+        <span class="text-amber-500">Kunwar Aditya</span>
       </h1>
       <p class="font-light max-w-sm md:text-xl text-justify">
         An aspiring
@@ -23,10 +22,23 @@ import Profile from "/profile.webp";
         >
         , currently pursuing my Bachelors in Computer Science and Engineering.
       </p>
+
+      <a
+        href="https://github.com/Kunwar-Aditya-Codes"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div
+          class="p-2 md:p-4 shadow-md rounded-md flex items-center space-x-2 md:space-x-4 bg-black"
+        >
+          <Icon name="mdi:github" class="w-6 md:w-8" />
+          <p class="font-light text-lg md:text-xl lg:text-2xl">Github</p>
+        </div>
+      </a>
     </div>
 
     <!-- Image -->
-    <div class="flex-[0.5] md:flex md:items-center md:justify-end h-full">
+    <div class="flex-[0.5] flex items-center md:justify-end h-full">
       <img
         src={Profile}
         alt="profile-image"

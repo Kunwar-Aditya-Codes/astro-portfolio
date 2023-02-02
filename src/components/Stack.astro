@@ -1,14 +1,46 @@
 ---
-import AsLogo from "/astro.webp";
-import Css from "/css.png";
-import Express from "/express.webp";
-import Html from "/html.png";
-import Js from "/js.png";
-import Mongo from "/mongo.png";
-import Next from "/next.webp";
-import Node from "/node.png";
-import React from "/react.png";
-import Tailwind from "/twind.webp";
+import { Icon } from "astro-icon";
 ---
 
-<div></div>
+<div class="p-5">
+  <h1
+    class="text-3xl text-center font-extralight md:text-5xl lg:text-7xl md:text-left mb-14 lg:mb-16"
+  >
+    <span class="font-bold text-amber-500">Web</span>
+    Technologies
+  </h1>
+  <div
+    class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-y-6 md:gap-y-10 lg:gap-y-16 justify-items-center md:justify-items-start"
+  >
+    <Icon
+      name="vscode-icons:file-type-html"
+      class="w-20 h-20 lg:w-24 lg:h-24"
+    />
+    <Icon name="vscode-icons:file-type-css" class="w-20 h-20 lg:w-24 lg:h-24" />
+    <Icon
+      name="vscode-icons:file-type-js-official"
+      class="w-20 h-20 lg:w-24 lg:h-24"
+    />
+    <Icon
+      name="vscode-icons:file-type-reactjs"
+      class="w-20 h-20 lg:w-24 lg:h-24"
+    />
+    <Icon
+      name="vscode-icons:file-type-astro"
+      class="w-20 h-20 lg:w-24 lg:h-24"
+    />
+    <Icon
+      name="vscode-icons:file-type-tailwind"
+      class="w-20 h-20 lg:w-24 lg:h-24"
+    />
+    <Icon
+      name="vscode-icons:file-type-typescript-official"
+      class="w-20 h-20 lg:w-24 lg:h-24"
+    />
+    <Icon name="logos:nextjs-icon" class="w-20 h-20 lg:w-24 lg:h-24" />
+    <Icon name="logos:redux" class="w-20 h-20 lg:w-24 lg:h-24" />
+    <Icon name="logos:nodejs-icon" class="w-20 h-20 lg:w-24 lg:h-24" />
+    <Icon name="simple-icons:express" class="w-20 h-20 lg:w-24 lg:h-24" />
+    <Icon name="simple-icons:mongodb" class="w-20 h-20 lg:w-24 lg:h-24" />
+  </div>
+</div>
