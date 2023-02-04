@@ -1,0 +1,48 @@
+---
+import Chat from "/chat-thumb.webp";
+import Erp from "/erp-thumb.webp";
+import Technotes from "/technotes-thumb.webp";
+import Tesla from "/tesla-thumb.webp";
+
+const projects = [
+  {
+    title: "Chat App",
+    description: "",
+    image: Chat,
+    link: "/chat-app",
+  },
+
+  {
+    title: "ERP",
+    description: "",
+    image: Erp,
+    link: "/erp-system",
+  },
+
+  {
+    title: "Technotes",
+    description: "",
+    image: Technotes,
+    link: "/technotes",
+  },
+
+  {
+    title: "Tesla Clone",
+    description: "",
+    image: Tesla,
+    link: "/tesla-clone",
+  },
+];
+---
+
+<div class="p-5">
+  <h1
+    class="text-3xl text-center font-extralight md:text-5xl lg:text-7xl md:text-left mb-14 lg:mb-16"
+  >
+    <span class="font-bold text-amber-500">Projects</span>
+  </h1>
+
+  <div>
+    {projects.map((project, index) => <div>{project.title}</div>)}
+  </div>
+</div>
