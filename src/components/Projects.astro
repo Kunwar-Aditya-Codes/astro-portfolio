@@ -7,28 +7,24 @@ import Tesla from "/tesla-thumb.webp";
 const projects = [
   {
     title: "Chat App",
-    description: "",
     image: Chat,
     link: "/chat-app",
   },
 
   {
-    title: "ERP",
-    description: "",
+    title: "ERP System",
     image: Erp,
     link: "/erp-system",
   },
 
   {
     title: "Technotes",
-    description: "",
     image: Technotes,
     link: "/technotes",
   },
 
   {
     title: "Tesla Clone",
-    description: "",
     image: Tesla,
     link: "/tesla-clone",
   },
@@ -42,7 +38,22 @@ const projects = [
     <span class="font-bold text-amber-500">Projects</span>
   </h1>
 
-  <div>
-    {projects.map((project, index) => <div>{project.title}</div>)}
+  <div class="grid gap-y-8 md:grid-cols-2 gap-x-8">
+    {
+      projects.map((project, index) => (
+        <a href={project.link}>
+          <div class="border-2 hover:border-amber-500 p-4 rounded-md transition ease-in-out duration-[250ms]">
+            <div>
+              <img src={project.image} alt="thumbnail" class="rounded-md" />
+            </div>
+            <div>
+              <h1 class="text-2xl text-center md:text-left font-light mt-4">
+                {project.title}
+              </h1>
+            </div>
+          </div>
+        </a>
+      ))
+    }
   </div>
 </div>
